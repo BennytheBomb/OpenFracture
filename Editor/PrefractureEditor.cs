@@ -1,8 +1,12 @@
+using OpenFracture.Runtime.Scripts;
 using UnityEditor;
 
-[CustomEditor(typeof(Prefracture))]
-[CanEditMultipleObjects]
-public class PrefractureEditor : Editor
+namespace OpenFracture.Editor
 {
-    // Empty editor required for custom property drawers to work properly
+    [CustomEditor(typeof(Prefracture))]
+    [CanEditMultipleObjects]
+    public class PrefractureEditor : UnityEditor.Editor
+    {
+        // Empty editor required for custom property drawers to work properly
+    }
 }

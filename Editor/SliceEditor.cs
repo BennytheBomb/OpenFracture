@@ -1,8 +1,12 @@
+using OpenFracture.Runtime.Scripts;
 using UnityEditor;
 
-[CustomEditor(typeof(Slice))]
-[CanEditMultipleObjects]
-public class SliceEditor : Editor
+namespace OpenFracture.Editor
 {
-    // Empty editor required for custom property drawers to work properly
+    [CustomEditor(typeof(Slice))]
+    [CanEditMultipleObjects]
+    public class SliceEditor : UnityEditor.Editor
+    {
+        // Empty editor required for custom property drawers to work properly
+    }
 }
