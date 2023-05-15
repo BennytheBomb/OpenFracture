@@ -58,7 +58,7 @@ namespace OpenFracture.Runtime.Scripts.Fragment
             }
         }
 
-        private void Unfreeze()
+        public void Unfreeze()
         {
             if (this.unfreezeAll)
             {
