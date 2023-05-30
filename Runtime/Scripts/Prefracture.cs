@@ -80,7 +80,7 @@ namespace OpenFracture.Runtime.Scripts
                 // Fire the completion callback
                 if (callbackOptions.onCompleted != null)
                 {
-                    callbackOptions.onCompleted.Invoke();
+                    callbackOptions.onCompleted.Invoke(this.fragmentRoot);
                 }
             }
         }

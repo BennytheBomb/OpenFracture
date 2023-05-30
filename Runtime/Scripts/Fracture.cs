@@ -164,7 +164,7 @@ namespace OpenFracture.Runtime.Scripts
                             {
                                 if (callbackOptions.onCompleted != null)
                                 {
-                                    callbackOptions.onCompleted.Invoke();
+                                    callbackOptions.onCompleted.Invoke(this.fragmentRoot);
                                 }
                             }
                         }
@@ -189,7 +189,7 @@ namespace OpenFracture.Runtime.Scripts
                     {
                         if (callbackOptions.onCompleted != null)
                         {
-                            callbackOptions.onCompleted.Invoke();
+                            callbackOptions.onCompleted.Invoke(this.fragmentRoot);
                         }
                     }
                 }
